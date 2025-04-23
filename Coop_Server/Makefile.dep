@@ -1,0 +1,8 @@
+clientManager.o: clientManager.cpp clientManager.h lobby.h data.h Game.h \
+ player.h server.h tools.h
+game.o: game.cpp game.h data.h player.h
+lobby.o: lobby.cpp lobby.h data.h Game.h player.h
+main.o: main.cpp server.h clientManager.h lobby.h data.h Game.h player.h \
+ tools.h
+server.o: server.cpp server.h clientManager.h lobby.h data.h Game.h \
+ player.h tools.h
